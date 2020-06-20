@@ -35,22 +35,22 @@ here are the attributes and method we get on this class:
 >
 > #method list. <br>
 > **get_x()**                       #returns the x value for the container. <br>
-> **set_x(x: int)**                 #returns the x value for the container.
+> **set_x(x: int)**                 #sets the x value for the container.
 >
 > **get_y()**                       #returns the y value for the container. <br>
-> **set_y(y: int)**                 #returns the y value for the container.
+> **set_y(y: int)**                 #sets the y value for the container.
 >
 > **get_placement()**               #returns a tupple with the x and y of the container. <br>
-> **set_placement(x: int, y: int)** #returns a tupple with the x and y of the container.
+> **set_placement(x: int, y: int)** #sets the x and y of the container.
 >
 > **get_width()**                   #returns the width value for the container. <br>
-> **set_width(width: int)**         #returns the width value for the container.
+> **set_width(width: int)**         #sets the width value for the container.
 >
 > **get_height()**                  #returns the height value for the container. <br>
-> **set_height(height: int)**       #returns the height value for the container.
+> **set_height(height: int)**       #sets the height value for the container.
 >
 > **get_size()**                               #returns a tupple with the width and height of the container. <br>
-> **set_size(width: int, height: int)**        #returns a tupple with the width and height of the container.
+> **set_size(width: int, height: int)**        #sets the width and height of the container.
 >
 > **get_dimentions()**                                         #returns a tupple with the x, y, width and height of the container. <br>
-> **set_dimentions(x: int, y: int, width: int, height: int)**  #returns a tupple with the x, y, width and height of the container.
+> **set_dimentions(x: int, y: int, width: int, height: int)**  #sets the x, y, width and height of the container.
