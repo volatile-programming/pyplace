@@ -13,13 +13,13 @@ Is easy to use package to get the placement and dimensions of a child container 
 > upper_left_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5)) <br>
 > upper_left_box.get_dimentions() #(0, 0, 640, 360)
 > 
-> lower_left_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0,0.5)) <br>
+> lower_left_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0, 0.5)) <br>
 > lower_left_box.get_dimentions() #(0, 360, 640, 360)
 > 
-> upper_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5,0)) <br>
+> upper_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5, 0)) <br>
 > upper_right_box.get_dimentions() #(640, 0, 640, 360)
 > 
-> lower_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5,0.5)) <br>
+> lower_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5, 0.5)) <br>
 > lower_right_box.get_dimentions() #(640, 360, 640, 360)
 
 
