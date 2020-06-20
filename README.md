@@ -27,30 +27,32 @@ Is easy to use package to get the placement and dimensions of a child container 
 when we call the *get_container* or *get_child_container* we get a Container instance that we can use for getting a tupple of single variables holding the size and placement information for the container we created.
 
 here are the attributes and method we get on this class:
-> #atribute list.
-> **__x**       #the container x position. <br>
-> **__y**       #the container x position. <br>
-> **__width**   #the container width dimention. <br>
-> **__height**  #the container height dimention. <br>
->
-> #method list. <br>
-> **get_x()**                       #returns the x value for the container. <br>
-> **set_x(x: int)**                 #sets the x value for the container.
->
-> **get_y()**                       #returns the y value for the container. <br>
-> **set_y(y: int)**                 #sets the y value for the container.
->
-> **get_placement()**               #returns a tupple with the x and y of the container. <br>
-> **set_placement(x: int, y: int)** #sets the x and y of the container.
->
-> **get_width()**                   #returns the width value for the container. <br>
-> **set_width(width: int)**         #sets the width value for the container.
->
-> **get_height()**                  #returns the height value for the container. <br>
-> **set_height(height: int)**       #sets the height value for the container.
->
-> **get_size()**                               #returns a tupple with the width and height of the container. <br>
-> **set_size(width: int, height: int)**        #sets the width and height of the container.
->
-> **get_dimentions()**                                         #returns a tupple with the x, y, width and height of the container. <br>
-> **set_dimentions(x: int, y: int, width: int, height: int)**  #sets the x, y, width and height of the container.
+
+
+    # atribute list.
+    __x       # the container x position.
+    __y       # the container x position.
+    __width   # the container width dimention.
+    __height  # the container height dimention.
+
+    # method list.
+    get_x()                             # returns the x value for the container.
+    set_x(x: int)                       # sets the x value for the container.
+
+    get_y()                             # returns the y value for the container.
+    set_y(y: int)                       # sets the y value for the container.
+
+    get_placement()                     # returns a tupple with the x and y of the container.
+    set_placement(x: int, y: int)       # sets the x and y of the container.
+
+    get_width()                         # returns the width value for the container.
+    set_width(width: int)               # sets the width value for the container.
+
+    get_height()                        # returns the height value for the container.
+    set_height(height: int)             # sets the height value for the container.
+
+    get_size()                          # returns a tupple with the width and height of the container.
+    set_size(width: int, height: int)   # sets the width and height of the container.
+
+    get_dimentions()                                         # returns a tupple with the x, y, width and height of the container.
+    set_dimentions(x: int, y: int, width: int, height: int)  # sets the x, y, width and height of the container.
