@@ -3,14 +3,31 @@
     A module to get the size and placement of a chaild container in relation with
     the percentage to be taken from the parent container's size and placement.
 
-    Version: 0.5.0
+    Version: 0.6.0
     Autor:  Jeffrey Issaul Jose de la Rosa.
+
+Usage:
+
+    from pbp import get_container, get_child_container
 """
 import math
 
 from container import Container
 
 def get_container(parent_size: tuple, percentages: tuple, origin: tuple = None) -> Container:
+    """Gets a new parent container base on the size and percentages given.
+
+    Args:
+                    parent_size: The width and height size reference for the new parent container.
+                    percentages: The width and height percentages to get the size for the new parent container.
+        (optional)  origin: The x and y cordinates to place the new parent container.
+    
+    Raises:
+        TypeError: If an argument variable was not send as a tuple.
+        
+    Returns:
+        A Container class with the x, y, width and height values for the new parent container.
+    """
     origin_x = 0
     origin_y = 0
     parent_width = 0
@@ -32,6 +49,19 @@ def get_container(parent_size: tuple, percentages: tuple, origin: tuple = None) 
     return Container(origin_x, origin_y, width, height)
 
 def get_child_container(parent_container: Container, size_percentages: tuple, place_percentages: tuple = (0,0)) -> Container:
+    """Gets a new child container base on the parent container and size percentagesgiven.
+
+    Args:
+                    parent_container: The x, y, width and height value of the child container.
+                    size_percentages: The width and height percentages to get the size for the new child container.
+        (optional)  place_percentages: The x and y percentages to get the placement for the new child container.
+
+    Raises:
+        TypeError: If an argument variable was not send as a tuple.
+    
+    Returns:
+        A Container class with the x, y, width and height values for the new child container.
+    """
     parent_x = 0
     parent_y = 0
     parent_width = 0

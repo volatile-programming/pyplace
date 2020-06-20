@@ -1,13 +1,13 @@
 """container.py:
-    container :=> (placement holder with some getters and setters)
     A module with a container class that holds variables and methdos
-    helpful for storing positional (x, y) and dimentional (width, height) data.
+    helpful for storing/retriaving positional (x, y) and dimentional (width, height) data.
 
-    Version: 0.5.0
+    Version: 0.6.0
     Autor:  Jeffrey Issaul Jose de la Rosa.
 """
 
 class Container:
+    """A Size/Placement holder with some getters and setters to work with its attributes."""
     def __init__(self, x: int, y: int, width: int, height: int):
         self.set_x(x)
         self.set_y(y)
