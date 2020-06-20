@@ -44,19 +44,19 @@ Is the main package module it contains two methods *get_container()* and *get_ch
     screen_height = 720
 
     window = get_container(parent_size=(screen_with, screen_height), percentages=(1, 1))
-    window.get_dimentions() #(0, 0, 1280, 720)
+    window.get_dimentions()             # (0, 0, 1280, 720)
 
     upper_left_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5))
-    upper_left_box.get_dimentions() #(0, 0, 640, 360)
+    upper_left_box.get_dimentions()     # (0, 0, 640, 360)
 
     lower_left_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0, 0.5))
-    lower_left_box.get_dimentions() #(0, 360, 640, 360)
+    lower_left_box.get_dimentions()     # (0, 360, 640, 360)
 
     upper_right_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0.5, 0))
-    upper_right_box.get_dimentions() #(640, 0, 640, 360)
+    upper_right_box.get_dimentions()    # (640, 0, 640, 360)
 
     lower_right_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0.5, 0.5))
-    lower_right_box.get_dimentions() #(640, 360, 640, 360)
+    lower_right_box.get_dimentions()    # (640, 360, 640, 360)
 
 
 ## Container
