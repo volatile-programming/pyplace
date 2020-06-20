@@ -3,14 +3,14 @@
     A module to get the size and placement of a chaild container in relation with
     the percentage to be taken from the parent container's size and placement.
 
-    Version: 0.4.0
+    Version: 0.5.0
     Autor:  Jeffrey Issaul Jose de la Rosa.
 """
 import math
 
 from container import Container
 
-def get_container(parent_size, percentages, origin=None):
+def get_container(parent_size: tuple, percentages: tuple, origin: tuple = None) -> Container:
     origin_x = 0
     origin_y = 0
     parent_width = 0
@@ -31,7 +31,7 @@ def get_container(parent_size, percentages, origin=None):
 
     return Container(origin_x, origin_y, width, height)
 
-def get_child_container(parent_container, size_percentages, place_percentages):
+def get_child_container(parent_container: Container, size_percentages: tuple, place_percentages: tuple = (0,0)) -> Container:
     parent_x = 0
     parent_y = 0
     parent_width = 0
@@ -42,10 +42,7 @@ def get_child_container(parent_container, size_percentages, place_percentages):
     horizontal_place_percentage = 0
 
     try:
-        parent_x = parent_container.x
-        parent_y = parent_container.y
-        parent_width = parent_container.width
-        parent_height = parent_container.height
+        parent_x, parent_y, parent_width, parent_height = parent_container.get_dimentions()
 
         vertical_size_percentage, horizontal_size_percentage = size_percentages
         vertical_place_percentage, horizontal_place_percentage = place_percentages
