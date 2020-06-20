@@ -1,11 +1,11 @@
-# pyplace (a place by percentage package)
+# pyplace (a place by percentage Python package)
 Is easy to use package to get the placement and dimensions of a child container base on the percentage given and the relative placement and size of the parent container.
 
 ## pdb
-Is the main package module it contains two methods *get_container* and *get_child_container* witch will be descrived in more ditails down here.
+Is the main package module it contains two methods *get_container()* and *get_child_container()* witch will be descrived in more details down here.
 
+**get_container(parent_size: tuple, percentages: tuple, origin: tuple = None)** <br>
     # Gets a new parent container base on the size and percentages given.
-    get_container(parent_size: tuple, percentages: tuple, origin: tuple = None)
     # Args:
     #                parent_size: The width and height size reference for the new parent container.
     #                percentages: The width and height percentages to get the size for the new parent container.
@@ -17,18 +17,18 @@ Is the main package module it contains two methods *get_container* and *get_chil
     # Returns:
     #    A Container class with the x, y, width and height values for the new parent container.
     
+**get_child_container(parent_container: Container, size_percentages: tuple, place_percentages: tuple = (0,0))**  <br>
     # Gets a new child container base on the parent container and size percentagesgiven.
-    get_child_container(parent_container: Container, size_percentages: tuple, place_percentages: tuple = (0,0))
-        # Args:
-        #                parent_container: The x, y, width and height value of the child container.
-        #                size_percentages: The width and height percentages to get the size for the new child container.
-        #    (optional)  place_percentages: The x and y percentages to get the placement for the new child container.
-        # 
-        # Raises:
-        #    TypeError: If an argument variable was not send as a tuple.
-        #
-        # Returns:
-        #    A Container class with the x, y, width and height values for the new child container.
+    # Args:
+    #                parent_container: The x, y, width and height value of the child container.
+    #                size_percentages: The width and height percentages to get the size for the new child container.
+    #    (optional)  place_percentages: The x and y percentages to get the placement for the new child container.
+    # 
+    # Raises:
+    #    TypeError: If an argument variable was not send as a tuple.
+    #
+    # Returns:
+    #    A Container class with the x, y, width and height values for the new child container.
 
 ## Example:
 
@@ -38,19 +38,19 @@ Is the main package module it contains two methods *get_container* and *get_chil
     screen_width = 1280 <br>
     screen_height = 720
 
-    window = get_container(parent_size=(screen_with, screen_height), percentages=(1, 1)) <br>
+    window = get_container(parent_size=(screen_with, screen_height), percentages=(1, 1))
     window.get_dimentions() #(0, 0, 1280, 720)
 
-    upper_left_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5)) <br>
+    upper_left_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5))
     upper_left_box.get_dimentions() #(0, 0, 640, 360)
 
-    lower_left_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0, 0.5)) <br>
+    lower_left_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0, 0.5))
     lower_left_box.get_dimentions() #(0, 360, 640, 360)
 
-    upper_right_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0.5, 0)) <br>
+    upper_right_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0.5, 0))
     upper_right_box.get_dimentions() #(640, 0, 640, 360)
 
-    lower_right_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0.5, 0.5)) <br>
+    lower_right_box = get_child_container(parent_container=window, size_percentages=(0.5, 0.5), place_percentages=(0.5, 0.5))
     lower_right_box.get_dimentions() #(640, 360, 640, 360)
 
 
