@@ -2,13 +2,13 @@
 Is easy to use package to get the placement and dimensions of a child container base on the percentage given and the relative placement and size of the parent container.
 
 ## Example:
-> from pyplace import pbp
+> from pyplace.pbp import get_container, get_child_container
 > 
-> screen_with = 1280 <br>
+> screen_width = 1280 <br>
 > screen_height = 720
 > 
-> windows = pbp.get_container(origin:(0, 0), parent:(screen_with, screen_height), percentage:(1, 1)) <br>
-> upper_left_box = pbp.get_child_container(parent:windows, place_persentage:(0,0) size_percentage:(0.5, 0.5)) <br>
-> lower_left_box = pbp.get_child_container(parent:windows, place_persentage:(0,0.5) size_percentage:(0.5, 0.5)) <br>
-> upper_right_box = pbp.get_child_container(parent:windows, place_persentage:(0.5,0) size_percentage:(0.5, 0.5)) <br>
-> lower_right_box = pbp.get_child_container(parent:windows, place_persentage:(0.5,0.5) size_percentage:(0.5, 0.5)) <br>
+> windows = get_container(parent_size:(screen_with, screen_height), percentages:(1, 1)) <br>
+> upper_left_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5)) <br>
+> lower_left_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0,0.5)) <br>
+> upper_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5,0)) <br>
+> lower_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5,0.5)) <br>
