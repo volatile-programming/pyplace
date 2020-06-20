@@ -8,10 +8,20 @@ Is easy to use package to get the placement and dimensions of a child container 
 > screen_height = 720
 > 
 > windows = get_container(parent_size:(screen_with, screen_height), percentages:(1, 1)) <br>
+> windows.get_dimentions() #(0, 0, 1280, 720)
+> 
 > upper_left_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5)) <br>
+> upper_left_box.get_dimentions() #(0, 0, 640, 360)
+> 
 > lower_left_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0,0.5)) <br>
+> lower_left_box.get_dimentions() #(0, 360, 640, 360)
+> 
 > upper_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5,0)) <br>
+> upper_right_box.get_dimentions() #(640, 0, 640, 360)
+> 
 > lower_right_box = get_child_container(parent_container:windows, size_percentages:(0.5, 0.5), place_percentages:(0.5,0.5)) <br>
+> lower_right_box.get_dimentions() #(640, 360, 640, 360)
+
 
 ## Container
 when we call the *get_container* or *get_child_container* we get a Container instance that we can use for geting a tupple of single variables holding the size and placement information for the container we created.
