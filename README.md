@@ -4,7 +4,8 @@ Is easy to use package to get the placement and dimensions of a child container 
 ## pdb
 Is the main package module it contains two methods *get_container()* and *get_child_container()* witch will be descrived in more details down here.
 
-**get_container(parent_size: tuple, percentages: tuple, origin: tuple = None)** <br>
+**get_container(parent_size: tuple, percentages: tuple, origin: tuple = None)**
+
     # Gets a new parent container base on the size and percentages given.
     # Args:
     #                parent_size: The width and height size reference for the new parent container.
@@ -17,7 +18,8 @@ Is the main package module it contains two methods *get_container()* and *get_ch
     # Returns:
     #    A Container class with the x, y, width and height values for the new parent container.
     
-**get_child_container(parent_container: Container, size_percentages: tuple, place_percentages: tuple = (0,0))**  <br>
+**get_child_container(parent_container: Container, size_percentages: tuple, place_percentages: tuple = (0,0))**
+
     # Gets a new child container base on the parent container and size percentagesgiven.
     # Args:
     #                parent_container: The x, y, width and height value of the child container.
