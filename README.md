@@ -1,8 +1,11 @@
 # pyplace (a place by percentage Python package)
 Is easy to use package to get the placement and dimensions of a child container base on the percentage given and the relative placement and size of the parent container.
 
-## pdb
-Is the main package module it contains two methods *get_container()* and *get_child_container()* witch will be descrived in more details down here.
+## Usage
+
+    from pyplace.pbd import *
+
+Is the main package module it contains two methods *get_container()* and *get_child_container()* witch will be descrived in more details down below:
 
 **get_container(parent_size: tuple, percentages: tuple, origin: tuple = None)**
 
@@ -37,7 +40,7 @@ Is the main package module it contains two methods *get_container()* and *get_ch
     # full screen window with four child boxes
     from pyplace.pbp import get_container, get_child_container
 
-    screen_width = 1280 <br>
+    screen_width = 1280
     screen_height = 720
 
     window = get_container(parent_size=(screen_with, screen_height), percentages=(1, 1))
