@@ -1,9 +1,9 @@
 """container.py:
     A module with a container class that holds variables and methdos
-    helpful for storing/retriaving positional (x, y) and dimentional (width, height) data.
+    helpful for storing/retrieving positional (x, y) and dimensional (width, height) data.
 
     Version: 0.6.0
-    Autor:  Jeffrey Issaul Jose de la Rosa.
+    Author:  Jeffrey Issaul Jose de la Rosa.
 """
 
 class Container:
@@ -52,9 +52,9 @@ class Container:
         self.set_width(width)
         self.set_height(height)
 
-    def get_dimentions(self) -> tuple:
+    def get_dimensions(self) -> tuple:
         return (self.__x, self.__y, self.__width, self.__height)
 
-    def set_dimentions(self, x: int, y: int, width: int, height: int):
+    def set_dimensions(self, x: int, y: int, width: int, height: int):
         self.set_placement(x, y)
         self.set_size(width, height)
