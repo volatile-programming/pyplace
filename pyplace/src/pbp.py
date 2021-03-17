@@ -12,7 +12,7 @@ Usage:
 """
 import math
 
-from container import Container
+from .container import Container
 
 def get_container(parent_size: tuple, percentages: tuple, origin: tuple = None) -> Container:
     """Gets a new parent container base on the size and percentages given.
