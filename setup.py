@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='pyplace',
+    name='pyplace-foulow',
     version='0.6.7',
     description='A littler utility to stop remembering tons of numbers and star using percentages for containers size and placement.',
     long_description=long_description,
@@ -17,7 +17,7 @@ setuptools.setup(
     },
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GNU General Public License v3",
+        "License :: OSI Approved :: GNU Affero General Public License v3",
         "Development Status :: 3 - Alpha",
         "Operating System :: OS Independent",
     ],
