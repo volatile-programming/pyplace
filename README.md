@@ -51,6 +51,7 @@ Is the main package module it contains two methods _get_container()_ and _get_ch
 
     Returns:
     A Container class with the x, y, width and height values for the new child container.
+"""
 ```
 
 ### Example:
@@ -84,8 +85,6 @@ Is the main package module it contains two methods _get_container()_ and _get_ch
     # Returns: tuple(640, 360, 640, 360)
     lower_right_box.get_dimensions()
 ```
-
-> This is just litter demonstrations of all the possibles configurations for size and placement.
 
 ## Container
 
