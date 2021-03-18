@@ -20,7 +20,7 @@ A littler utility to stop remembering tons of numbers and star using percentages
 ```bash
   $ python -m pip install pyplace-file-name.whl
 ```
-> Been *pyplace-file-name* the name of the file downloaded.
+> Been **pyplace-file-name** the name of the file downloaded.
 
 - b. If you clone or download the .zip file and then extract it. the repo you just have to go to the repository path and run:
 ```bash
