@@ -2,7 +2,7 @@
     A module with a container class that holds variables and methdos
     helpful for storing/retrieving positional (x, y) and dimensional (width, height) data.
 
-    Version:  0.6.7
+    Version:  0.6.8
     Author:  Jeffrey Issaul Jose de la Rosa.
 """
 

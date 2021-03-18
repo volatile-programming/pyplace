@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='pyplace-foulow',
-    version='0.6.7',
+    name='pyplace',
+    version='0.6.8',
     description='A littler utility to stop remembering tons of numbers and star using percentages for containers size and placement.',
     long_description=long_description,
     long_description_content_type="text/markdown",

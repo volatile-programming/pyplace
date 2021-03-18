@@ -3,7 +3,7 @@
     A module to get the size and placement of a child container in relation with
     the percentage to be taken from the parent container's size and placement.
 
-    Version:  0.6.7
+    Version:  0.6.8
     Author:  Jeffrey Issaul Jose de la Rosa.
 
 Usage:
