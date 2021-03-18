@@ -94,6 +94,7 @@ when we call the _get_container_ or _get_child_container_ we get a Container ins
 here are the attributes and method we get on this class:
 
 ```python
+"""
     # attribute list.
     __x       # the container x position.
     __y       # the container x position.
@@ -121,4 +122,5 @@ here are the attributes and method we get on this class:
 
     get_dimensions()                    # returns a tuple with the x, y, width and height of the container.
     set_dimensions(x: int, y: int, width: int, height: int)  # sets the x, y, width and height of the container.
+"""
 ```
