@@ -70,6 +70,7 @@ Is the main package module it contains two methods _get_container()_ and _get_ch
 
     Returns:
     A Container class with the x, y, width and height values for the new child container.
+"""
 ```
 
 ### Example:
@@ -104,8 +105,6 @@ Is the main package module it contains two methods _get_container()_ and _get_ch
     lower_right_box.get_dimensions()
 ```
 
-> This is just litter demonstrations of all the possibles configurations for size and placement.
-
 ## Container
 
 when we call the _get_container_ or _get_child_container_ we get a Container instance that we can use for getting a tuple of single variables holding the size and placement information for the container we created.
@@ -113,6 +112,7 @@ when we call the _get_container_ or _get_child_container_ we get a Container ins
 here are the attributes and method we get on this class:
 
 ```python
+"""
     # attribute list.
     __x       # the container x position.
     __y       # the container x position.
@@ -140,4 +140,5 @@ here are the attributes and method we get on this class:
 
     get_dimensions()                    # returns a tuple with the x, y, width and height of the container.
     set_dimensions(x: int, y: int, width: int, height: int)  # sets the x, y, width and height of the container.
+"""
 ```
