@@ -7,11 +7,11 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='pyplace',
-    version='0.6.8',
+    version='0.6.9',
     description='A littler utility to stop remembering tons of numbers and star using percentages for containers size and placement.',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/volatile-programming/pyplace",
+    url="https://volatileprogramming.org",
     project_urls={
         "Source Code": "https://github.com/volatile-programming/pyplace",
     },
