@@ -1,30 +1,22 @@
-"""pbp.py:
-    pbp :=> (Place by Percentage)
-    A module to get the size and placement of a child container in relation with
-    the percentage to be taken from the parent container's size and placement.
+"""pbp.py: pbp => (Place by Percentage)
 
-    Version:  0.6.8
-    Author:  Jeffrey Issaul Jose de la Rosa.
-
-Usage:
-
-    from pbp import get_container, get_child_container
+    A module to get the size and placement of a child container in relation with the percentage to be taken from the parent container's size and placement.
 """
 import math
 
-from .container import Container
+from .psc import PlacementAndSizeContainer as psc
 
-def get_container(parent_size: tuple, percentages: tuple, origin: tuple = None) -> Container:
+def get_container(parent_size: tuple, percentages: tuple, origin: tuple = None) -> psc:
     """Gets a new parent container base on the size and percentages given.
 
     Args:
                     parent_size: The width and height size reference for the new parent container.
                     percentages: The width and height percentages to get the size for the new parent container.
         (optional)  origin: The x and y coordinates to place the new parent container.
-    
+
     Raises:
         TypeError: If an argument variable was not send as a tuple.
-        
+
     Returns:
         A Container class with the x, y, width and height values for the new parent container.
     """
@@ -46,9 +38,9 @@ def get_container(parent_size: tuple, percentages: tuple, origin: tuple = None) 
     width  = int(math.floor(parent_width * vertical_percentage))
     height = int(math.floor(parent_height * horizontal_percentage))
 
-    return Container(origin_x, origin_y, width, height)
+    return psc(origin_x, origin_y, width, height)
 
-def get_child_container(parent_container: Container, size_percentages: tuple, place_percentages: tuple = (0,0)) -> Container:
+def get_child_container(parent_container: psc, size_percentages: tuple, place_percentages: tuple = (0,0)) -> psc:
     """Gets a new child container base on the parent container and size percentages given.
 
     Args:
@@ -58,7 +50,7 @@ def get_child_container(parent_container: Container, size_percentages: tuple, pl
 
     Raises:
         TypeError: If an argument variable was not send as a tuple.
-    
+
     Returns:
         A Container class with the x, y, width and height values for the new child container.
     """
@@ -84,4 +76,4 @@ def get_child_container(parent_container: Container, size_percentages: tuple, pl
     width  = int(math.floor(parent_width * vertical_size_percentage))
     height = int(math.floor(parent_height * horizontal_size_percentage))
 
-    return Container(origin_x, origin_y, width, height)
+    return psc(origin_x, origin_y, width, height)
