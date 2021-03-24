@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='pyplace',
-    version='0.6.9',
+    version='0.6.10',
     description='A littler utility to stop remembering tons of numbers and star using percentages for containers size and placement.',
     long_description=long_description,
     long_description_content_type="text/markdown",

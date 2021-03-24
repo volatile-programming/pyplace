@@ -108,6 +108,8 @@ Is the main package module it contains two methods _get_container()_ and _get_ch
   lower_right_box.get_dimensions()
 ```
 
+> This will create one parent (main target) and four children (relative to the main target) containers.
+
 ## Container
 
 when we call the _get_container_ or _get_child_container_ we get a Container instance that we can use for getting a tuple of single variables holding the size and placement information for the container we created.
