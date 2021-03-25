@@ -6,7 +6,7 @@ Pyplace is a easy to use package to get the placement and dimensions of a child 
 
 ### _In a few words definition:_
 
-A littler utility to stop remembering tons of numbers and star using percentages for containers size and placement.
+A littler utility to stop remembering tons of numbers and start using percentages for containers size and placement.
 
 ## Installation
 
@@ -24,7 +24,7 @@ A littler utility to stop remembering tons of numbers and star using percentages
   $ python -m pip install pyplace-file-name.whl
 ```
 
-> Been _pyplace-file-name_ the name of the file downloaded.
+> Been **pyplace-file-name** the name of the file downloaded.
 
 -   b. If you clone or download the .zip file and then extract it. the repo you just have to go to the repository path and run:
 
